@@ -30,7 +30,6 @@ app.use(express.json());
 app.use(
 	cors({
 		origin: "*", //dirección de la app de React desde la que nos llegarán las peticiones.
-		credentials: true,
 	})
 );
 
