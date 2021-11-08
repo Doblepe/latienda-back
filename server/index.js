@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
 	cors({
-		origin: "http://localhost:3000", //dirección de la app de React desde la que nos llegarán las peticiones.
+		origin: "*", //dirección de la app de React desde la que nos llegarán las peticiones.
 		credentials: true,
 	})
 );
