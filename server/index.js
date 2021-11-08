@@ -26,9 +26,7 @@ app.get("*", function (request, response) {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(cors({
-    orignin: "*"}
-))
+
 app.use(
 	cors({
 		origin: "*", //dirección de la app de React desde la que nos llegarán las peticiones.
