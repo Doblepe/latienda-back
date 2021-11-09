@@ -30,8 +30,6 @@ app.use(
 		origin: "*", //dirección de la app de React desde la que nos llegarán las peticiones.
 	})
 );
-
-
 app.use(
 	session({
 		secret: secreto, //Secreto de la sesion (se puede hacer dinámico),
@@ -60,7 +58,6 @@ app.use((req, res, next) => {
 	console.log(req.user ? req.user : "No hay usuario");
 	next();
 })
-
 app.use(passport.initialize());
 app.use(passport.session());
 
