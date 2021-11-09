@@ -27,7 +27,7 @@ app.use(express.json());
 
 app.use(
 	cors({
-		origin: "*", //dirección de la app de React desde la que nos llegarán las peticiones.
+		origin: "*", // llegarán desde todas las direcciones dirección de la app de React desde la que nos llegarán las peticiones.
 	})
 );
 app.use(
